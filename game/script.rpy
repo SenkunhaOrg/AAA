@@ -137,7 +137,9 @@ label start:
 
     v "Peenar might not be so bad after all..."
 
+    scene larry
 
+    l "maybe you're right..."
 
 
 
