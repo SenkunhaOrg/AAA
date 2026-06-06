@@ -146,7 +146,7 @@ label start:
 
     scene larry
 
-    l "maybe you're right..."
+    l "Maybe you're right..."
 
     scene PEC
 
@@ -188,8 +188,8 @@ label start:
 
     y "I need to explore."
 
-    "terry explores the area to figure out where that noise came from."
-    "when suddenly, he hears a..."
+    "Terry explores the area to figure out where that noise came from."
+    "When suddenly, he hears a..."
 
     scene adolf jackson
     with dissolve
@@ -206,7 +206,7 @@ label start:
 
     scene terry
 
-    y "what is it?"
+    y "What is it?"
 
     scene adolf jackson
 
@@ -215,13 +215,13 @@ label start:
     
     scene terry
 
-    y "but larry said he tried everything and couldn't find him!"
-    y "how do you know where he is?!"
+    y "But larry said he tried everything and couldn't find him!"
+    y "How do you know where he is?!"
  
 
     scene adolf jackson
     
-    a "doesn't matter, do you accept my offer?"
+    a "Doesn't matter, do you accept my offer?"
 
     menu:
         "Yes":
@@ -234,10 +234,23 @@ label start:
         scene terry
         y "I will find him...and end his terror once and for all!"
         
+        scene adolf jackson
+        a "Good, I will be with you."
+        jump after_menu
+        
 
     label refuse:
         scene terry
-        y "No, but i will tell Larry and he can take his revenge"
+        y "No, but I will tell Larry and he can take his revenge"
+        jump after_menu
+
+    label after_menu:
+
+    scene adolf jackson
+    a "Now go, do what you must. I can't be seen by young kittens."
+
+
+
         
 
     
