@@ -24,7 +24,8 @@ define j = Character("James")
 
 define audio.theme = "audio/theme.mp3"
 define audio.horn = "audio/Horn.mp3"
-define audio.voice = "what.mp3"
+define audio.voice = "audio/what.mp3"
+define audio.snip = "audio/snip.mp3"
 
 # The game starts here.
 
@@ -211,7 +212,6 @@ label start:
         f "After all, my son. Larry!-"
 
         scene adolf jackson
-        with dissolve
         a "Oh poor little Larry, what a wonderful... child..."
 
         scene father larry
@@ -229,7 +229,6 @@ label start:
         f "Far. Far. Away."
 
         scene adolf jackson
-        with dissolve
         a "EXCUSE ME?!"
         a "Sorry... I got a bit excited..."
         a "I will do. What are you going to do?"
@@ -268,8 +267,8 @@ label start:
         scene larry
         with dissolve
         l "*Sleep talking* La la la la la."
-        "Insert snipping sound"
-        l "*Sleep talking still* Pee... nar...."
+        play sound snip no loop
+        l "*Sleep talking* Pee... nar...."
 
         scene black
         with dissolve
@@ -281,7 +280,7 @@ label start:
 
         scene larry
         with dissolve
-        l "*Shmimimimimi*"
+        l "*Shmimimimimi.*"
 
         scene adolf jackson
         with dissolve
@@ -301,7 +300,7 @@ label start:
 
         scene terry
         y "Oh... LADY BOY!"
-        "Terry jumps with joy"
+        "Terry jumps with joy."
         jump after_menu
         
 
