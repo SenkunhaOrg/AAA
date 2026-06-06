@@ -17,17 +17,16 @@ define v = Character("The Voices")
 define y = Character("Terry") 
 
 define audio.theme = "audio/theme.mp3"
+define audio.horn = "audio/Horn.mp3"
+define audio.voice = "what.mp3"
 
 # The game starts here.
 
 label start:
 
+    stop music fadeout 2.0
 
     play music theme fadein 3.0
-
-
-
-
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -141,11 +140,45 @@ label start:
 
     l "maybe you're right..."
 
-
-
     scene PEC
 
-    e "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
+    l "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
+
+    l "THERE IS NO ENOUGH PEENAR! I MUST..."
+
+    l "COLLECT..."
+
+    l "ALL... THE..."
+
+    $ renpy.music.set_volume(0.00, delay=2, channel='music')
+
+    play sound horn noloop
+
+    l "PEEENAAARRRRRR"
+   
+    $renpy.music.set_volume(1.00,delay=0, channel='music')
+
+    scene terry
+
+    y "Woah.... larry..."
+
+    stop music fadeout 2.0
+
+    y "I don't know what to do."
+
+    play sound voice noloop
+
+    scene thevoices
+
+    v "*Muffled signal*"
+    
+    scene terry
+
+    y "What was that?"
+
+    play music theme fadein 3.0
+
+    y "I need to explore."
 
 
     return
