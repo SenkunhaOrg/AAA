@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -187,6 +187,64 @@ label start:
     play music theme fadein 3.0
 
     y "I need to explore."
+
+    "terry explores the area to figure out where that noise came from."
+    "when suddenly, he hears a..."
+
+    scene adolf jackson
+    with dissolve
+
+    a "HEEHEE"
+
+    scene terry
+
+    y "OMG! ARE YOU THE INFAMOUS ADOLF JACKSON?!"
+
+    scene adolf jackson
+
+    a "Yes, it is I, Terry there is something I must tell you."
+
+    scene terry
+
+    y "what is it?"
+
+    scene adolf jackson
+
+    a "I know where father larry is hiding..."
+    a "if you can find him and catch him, larry will finally be at peace again."
+    
+    scene terry
+
+    y "but larry said he tried everything and couldn't find him!"
+    y "how do you know where he is?!"
+ 
+
+    scene adolf jackson
+    
+    a "doesn't matter, do you accept my offer?"
+
+    menu:
+        "Yes":
+            jump findlarry
+
+        "No":
+            jump refuse
+
+    label findlarry:
+        scene terry
+        y "I will find him...and end his terror once and for all!"
+        
+
+    label refuse:
+        scene terry
+        y "No, but i will tell Larry and he can take his revenge"
+        
+
+    
+
+
+
+
 
 
     return
