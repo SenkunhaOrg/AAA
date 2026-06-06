@@ -10,11 +10,19 @@ image larry = im.Scale("larry.png", 1920, 1080)
 image PEC = im.Scale("pec.png", 1920, 1080)
 image thevoices = im.Scale("thevoice.png", 1920, 1080)
 image terry = im.Scale("terry.png", 1920, 1080)
+image adolf jackson = im.Scale("adolf jackson.jpg", 1920, 1080)
+image father larry = im.Scale("father larry.gif", 1920, 1080)
+image james = im.Scale("james.jpg", 1920, 1080)
+
 
 define e = Character("Tyler")
 define l = Character("Larry")
 define v = Character("The Voices")
-define y = Character("Terry") 
+define y = Character("Terry")  
+define a = Character("Adolf Jackson")
+define f = Character("father larry")
+define j = Character("james")
+
 
 define audio.theme = "audio/theme.mp3"
 define audio.horn = "audio/Horn.mp3"
