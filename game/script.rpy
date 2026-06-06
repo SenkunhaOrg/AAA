@@ -142,13 +142,13 @@ label start:
 
     scene PEC
 
-    l "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
+    y "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
 
-    l "THERE IS NO ENOUGH PEENAR! I MUST..."
+    y "THERE IS NO ENOUGH PEENAR! I MUST..."
 
-    l "COLLECT..."
+    y "COLLECT..."
 
-    l "ALL... THE..."
+    y "ALL... THE..."
 
     $ renpy.music.set_volume(0.00, delay=2, channel='music')
 
