@@ -267,7 +267,7 @@ label start:
         scene larry
         with dissolve
         l "*Sleep talking* La la la la la."
-        play sound snip no loop
+        play sound snip noloop
         l "*Sleep talking* Pee... nar...."
 
         scene black
