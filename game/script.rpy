@@ -27,6 +27,20 @@ define audio.horn = "audio/Horn.mp3"
 define audio.voice = "audio/what.mp3"
 define audio.snip = "audio/snip.mp3"
 
+label splashscreen :
+    scene black
+    with Pause(1)
+     
+
+    show larry with dissolve
+    with Pause(2)
+    
+
+    hide larry with dissolve
+    with Pause(1)
+    
+    return
+
 # The game starts here.
 
 label start:
