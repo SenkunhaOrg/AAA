@@ -26,6 +26,7 @@ define audio.theme = "audio/theme.mp3"
 define audio.horn = "audio/Horn.mp3"
 define audio.voice = "audio/what.mp3"
 define audio.snip = "audio/snip.mp3"
+define audio.heehee = "audio/HeeHee.mp3"
 
 label splashscreen :
     scene black
@@ -167,6 +168,7 @@ label start:
 
     scene adolf jackson
     with dissolve
+    play sound heehee noloop
 
     a "HEEHEE"
 
@@ -217,6 +219,8 @@ label start:
 
         scene adolf jackson
         with dissolve
+        play sound heehee noloop
+
         a "Oh my... HEHE... whatever is troubling you?"
 
         scene father larry
@@ -341,6 +345,7 @@ label start:
     y "It has been a pleasure, Adolf Jackson."
 
     scene black
+    play sound heehee noloop
     a "HEHEHE.... HEHE..."
     a "hehe..."
 
