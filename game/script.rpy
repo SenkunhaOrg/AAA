@@ -362,12 +362,12 @@ label start:
     l "It's alright, what is it that you want to tell me?"
 
     scene terry
-    y "I met with adolf jackson and he told me where father larry is hiding..."
+    y "I met with Adolf Jackson and he told me where Father Larry is hiding..."
     y "He said he's in...Taiwan..."
 
     scene larry
     l "WHAT?! I SHOULD HAVE KNOWN!"
-    l "When i was a kid, he used to take me to taiwan with adolf jackson...and they would..."
+    l "When I was a kid, he used to take me to taiwan with Adolf Jackson...and they would..."
 
     scene terry
     y "They would?"
@@ -375,10 +375,10 @@ label start:
     scene larry
     l "They had a cult there led by...THE CREATURE."
     l "They would steal peenars and conduct sick, twisted experiments on them."
-    l "The creature would also host parties where the cult members would all jork their peenars together. Father larry took me to one of those parties once and...they all jorked on me..."
+    l "The creature would host parties where the cult members would jork all their peenars together. Father larry took me to one of those parties once and...they all jorked on me..."
 
     scene terry
-    y "Oh my god, larry...I'm so sorry."
+    y "Oh my god, Larry...I'm so sorry."
     y "WE HAVE TO GO TO TAIWAN AND TAKE YOUR REVENGE!"
 
     scene larry
@@ -396,7 +396,7 @@ label start:
 
     scene larry
     l "Where... why... how?"
-    l "I saw your... peenar explode"
+    l "I saw your... peenar explode."
 
     scene james with dissolve
     j "Yes, it did."
