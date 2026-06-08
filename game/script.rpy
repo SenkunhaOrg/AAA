@@ -349,5 +349,51 @@ label start:
     a "HEHEHE.... HEHE..."
     a "hehe..."
 
+    scene larry with dissolve
+    l "*jorking it*"
+
+    scene terry
+    y "LARRY THERE IS SOMETHING I MUST TELL YOU!"
+    y "Oh my-! Sorry for interrupting."
+
+    scene larry
+    l "It's alright, what is it that you want to tell me?"
+
+    scene terry
+    y "I met with adolf jackson and he told me where father larry is hiding..."
+    y "He said he's in...taiwan..."
+
+    scene larry
+    l "WHAT?! I SHOULD HAVE KNOWN!"
+    l "When i was a kid, he used to take me to taiwan with adolf jackson...and they would..."
+
+    scene terry
+    y "They would ?"
+
+    scene larry
+    l "They had a cult there led by...THE CREATURE."
+    l "They would steal peenars and conduct sick and twisted experiments on them."
+    l "The creature would also host parties where the cult members would all jork their peenars together. Father larry took me to one of those parties once and...they all jorked on me..."
+
+    scene terry
+    y "Oh my god, larry...I'm so sorry."
+    y "WE HAVE TO GO TO TAIWAN AND TAKE YOUR REVENGE!"
+
+    scene larry
+    l "It would be too dangerous with just the two of us, they're too powerfull."
+
+    scene terry
+    y "I know the perfect person we can recruit on our journey..."
+
+    scene larry
+    l "You don't mean..."
+
+    scene james with fade
+    l "JAMES ?!"
+    
+ 
+
+
+
     # This ends the game
     return
