@@ -76,11 +76,13 @@ label start:
     e "Now you know the truth about me, and my ballz. I hope you enjoyed this game, and if you didn't... well, I don't care! I'm Tyler, and I'm unstoppable!"
     
     scene black
-    e "..."
-    e "......."
+    v "..."
+    v "......"
     v "*peenar chant*"
+    v "Rise, my sword."
 
-    scene larry
+    scene larry with dissolve
+    l "*Wakes up with an overwhelming sense of peenar*"
     l "Hm... I'm finally here..."
     
     scene thevoices
@@ -183,7 +185,7 @@ label start:
 
     scene adolf jackson
     a "I know where father larry is hiding..."
-    a "if you can find him and catch him, larry will finally be at peace again."
+    a "If you can find him and catch him, larry will finally be at peace again."
     
     scene terry
     y "But larry said he tried everything and couldn't find him!"
@@ -290,7 +292,7 @@ label start:
 
         scene black
         with dissolve
-        f "Peenar, acquired"
+        f "Peenar, acquired."
 
         scene father larry
         with dissolve
@@ -298,7 +300,7 @@ label start:
 
         scene larry
         with dissolve
-        l "*Shmimimimimi.*"
+        l "*Shmimimimimi*"
 
         scene adolf jackson
         with dissolve
@@ -350,7 +352,7 @@ label start:
     a "hehe..."
 
     scene larry with dissolve
-    l "*jorking it*"
+    l "*Jorking it crazy style*"
 
     scene terry
     y "LARRY THERE IS SOMETHING I MUST TELL YOU!"
@@ -361,18 +363,18 @@ label start:
 
     scene terry
     y "I met with adolf jackson and he told me where father larry is hiding..."
-    y "He said he's in...taiwan..."
+    y "He said he's in...Taiwan..."
 
     scene larry
     l "WHAT?! I SHOULD HAVE KNOWN!"
     l "When i was a kid, he used to take me to taiwan with adolf jackson...and they would..."
 
     scene terry
-    y "They would ?"
+    y "They would?"
 
     scene larry
     l "They had a cult there led by...THE CREATURE."
-    l "They would steal peenars and conduct sick and twisted experiments on them."
+    l "They would steal peenars and conduct sick, twisted experiments on them."
     l "The creature would also host parties where the cult members would all jork their peenars together. Father larry took me to one of those parties once and...they all jorked on me..."
 
     scene terry
@@ -380,7 +382,7 @@ label start:
     y "WE HAVE TO GO TO TAIWAN AND TAKE YOUR REVENGE!"
 
     scene larry
-    l "It would be too dangerous with just the two of us, they're too powerfull."
+    l "It would be too dangerous with just the two of us, they're too powerful."
 
     scene terry
     y "I know the perfect person we can recruit on our journey..."
@@ -389,9 +391,62 @@ label start:
     l "You don't mean..."
 
     scene james with fade
-    l "JAMES ?!"
-    
- 
+    l "JAMES?!"
+    j "Hey, kiddo."
+
+    scene larry
+    l "Where... why... how?"
+    l "I saw your... peenar explode"
+
+    scene james with dissolve
+    j "Yes, it did."
+    j "But, when Terry called me. I couldn't stay away."
+
+    scene larry
+    l "You should be...."
+    l "PEENARLESS!"
+    l "DON'T MESS WITH ME!"
+
+    scene james
+    j "It's okay Larry. Peenarless isn't the end."
+    j "IT'S MERELY THE BEGINNING!"
+    j "Now, Terry, what's the plan?"
+
+    scene terry
+    y "Taiwan."
+
+    scene larry
+    "Crickets."
+
+    scene james 
+    "More crickets."
+
+    scene terry
+    y "Lady boys."
+
+    scene thevoices with dissolve
+    v "I think we need to time skip this."
+    v "Terry loves lady boys."
+
+    scene black
+    "Fast forwarding 6 hours."
+    "Yes, Terry spoke about lady boys for 6 hours."
+
+    scene terry with dissolve
+    y "And that's how I fell in love with Ching Chong Xiao!"
+
+    scene james
+    j "Right... so how are we getting to Taiwan? I'm sure Father L will anticpate us."
+    j "Even after this many years..."
+
+    scene larry
+    l "James is right. He will want us to come."
+
+    scene terry
+    y "This is for your peenar revenge! We have to! It doesn't matter what he will or won't do!"
+
+    scene larry
+    l "Yeah... I guess so... Let's go."
 
 
 
