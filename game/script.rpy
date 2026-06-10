@@ -399,8 +399,8 @@ label start:
     l "I saw your... peenar explode."
 
     scene james with dissolve
-    j "Yes, it did."
-    j "But, when Terry called me. I couldn't stay away."
+    j "Yes, it did. Perhance..."
+    j "But, when my kohai called me. I couldn't stay away."
 
     scene larry
     l "You should be...."
@@ -409,8 +409,8 @@ label start:
 
     scene james
     j "It's okay Larry. Peenarless isn't the end."
-    j "IT'S MERELY THE BEGINNING!"
-    j "Now, Terry, what's the plan?"
+    j "IT'S MERELY THE BEGINNING! FOR I HOLD POWER BEYOND PEENAR! FOR I AM THE PEENARMASTER!"
+    j "Now, Terry-chan, what's the plan?"
 
     scene terry
     y "Taiwan."
@@ -419,7 +419,7 @@ label start:
     "Crickets."
 
     scene james 
-    "More crickets."
+    "More crickets but with a splash of sus."
 
     scene terry
     y "Lady boys."
@@ -436,7 +436,7 @@ label start:
     y "And that's how I fell in love with Ching Chong Xiao!"
 
     scene james
-    j "Right... so how are we getting to Taiwan? I'm sure Father L will anticpate us."
+    j "Right... so how are we getting to Taiwan? I'm hoping Daddy L is expecting us."
     j "Even after this many years..."
 
     scene larry
