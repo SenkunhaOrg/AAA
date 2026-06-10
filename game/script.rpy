@@ -1,4 +1,4 @@
-# The script of the game goes in this file.
+﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -447,6 +447,9 @@ label start:
 
     scene larry
     l "Yeah... I guess so... Let's go."
+
+    scene bg room
+    show normal larry
 
 
 
