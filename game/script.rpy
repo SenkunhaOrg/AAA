@@ -6,16 +6,42 @@
 image tyler happy = im.Scale("tyler happy.png", 1920, 1080) 
 image jumpsacre = im.Scale("jumpsacre.jpg", 1920, 1080)
 image black = im.Scale("black.png", 1920, 1080)
-image larry = im.Scale("larry.png", 1920, 1080)
+# image larry = im.Scale("larry.png", 1920, 1080)
 image PEC = im.Scale("pec.png", 1920, 1080)
 image thevoices = im.Scale("thevoice.png", 1920, 1080)
-image terry = im.Scale("terry.png", 1920, 1080)
-image adolf jackson = im.Scale("adolf jackson.jpg", 1920, 1080)
-image father larry = im.Scale("father larry.gif", 1920, 1080)
-image james = im.Scale("james.jpg", 1920, 1080)
+# image terry = im.Scale("terry.png", 1920, 1080)
+# image adolf jackson = im.Scale("adolf jackson.jpg", 1920, 1080)
+# image father larry = im.Scale("father larry.gif", 1920, 1080)
+# image james = im.Scale("james.jpg", 1920, 1080)
+
+# Note: We need Background images. Define above with "= im.Scale("imagefile", 1920, 1080)" as shown.
+
+image larry = "images/sprite/normal_larry.png"
+image larry angry = "images/sprite/angry_larry.png"
+image father larry = "images/sprite/normal_father_larry.png"
+image terry = "images/sprite/normal_terry.png"
+image adolf jackson = "images/sprite/normal_adolf.png"
+image james = "images/sprite/normal_james.png"
+image the creature = "images/sprite/the_creature.png"
+
+transform move_left_and_zoom:
+    xalign 0.10
+    yalign 0.95
+    zoom 0.75
+
+transform move_right_and_zoom:
+    xalign 0.90
+    yalign 0.95
+    zoom 0.75
+
+transform center:
+    xalign 0.5
+    yalign 0.95
+    zoom 0.75
+
 
 define e = Character("Tyler")
-define l = Character("Larry")
+define l = Character("Larry", image="larry")
 define v = Character("The Voices")
 define y = Character("Terry")  
 define a = Character("Adolf Jackson")
@@ -81,47 +107,43 @@ label start:
     v "*peenar chant*"
     v "Rise, my sword."
 
-    scene larry with dissolve
+    scene black with dissolve
+    show larry at center
     l "*Wakes up with an overwhelming sense of peenar*"
     l "Hm... I'm finally here..."
     
     scene thevoices
     v "Welcome, Larry. We've been waiting for you."
 
-    scene larry
+    scene black
+    show larry at center
     l "Who are you? What is this place?"
 
     scene thevoices
     v "This is the realm of the voices. We are the ones who guide and influence the minds of those who enter here."
 
-    scene larry
+    scene black 
+    show larry at center
     l "Why am I here? Is there peenar to destory?"
 
     scene thevoices
     v "Yes... look at them... peenar ready to be destroyed..."
 
-    scene larry
+    scene black 
+    show larry at center
     l "Oh yeah... I see them... I will destroy them all!"
     l "I will be the one to be the peenar menace once and for all!"
     l "I WILL DESTROY ALL PEENAR!!!"
     l "YOU CAN NOT HIDE YOUR PEENAR FROM ME!!!"
 
-    scene terry
+    scene black
+    show larry at move_left_and_zoom
+    show terry at move_right_and_zoom with dissolve
     y "Hey Larry, what's going on? Why are you yelling about peenar?"
-
-    scene larry
     l "Terry! I'm trying to destroy all the peenar! They're everywhere, and I can't let them win!" 
-
-    scene terry
     y "I understand that you're upset, but maybe you should take a break and calm down. Yelling won't solve anything."
-
-    scene larry
     l "I know, but I just can't help it! The peenar are so annoying and I want to get rid of them!"
-
-    scene terry
-    y "I get it, but maybe we can find a way to deal with the peenar together. Yelling won't make them go away, but maybe we can come up with a plan to handle them."
-
-    scene larry 
+    y "I get it, but maybe we can find a way to deal with the peenar together. Yelling won't make them go away, but maybe we can come up with a plan to handle them." 
     l "I guess you're right, Terry. Maybe we can work together to find a solution to the peenar problem."
 
     scene thevoices
@@ -129,10 +151,12 @@ label start:
     v "Maybe... just maybe..."
     v "Peenar might not be so bad after all..."
 
-    scene larry
+    scene black 
+    show larry at center
     l "Maybe you're right..."
 
     scene PEC
+    show terry at center
     y "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
     y "THERE IS NO ENOUGH PEENAR! I MUST..."
     y "COLLECT..."
@@ -141,16 +165,14 @@ label start:
     $ renpy.music.set_volume(0.00, delay=2, channel='music')
 
     play sound horn noloop
-
+    show larry at move_left_and_zoom
+    show terry at move_right_and_zoom
     l "PEEENAAARRRRRR"
    
     $renpy.music.set_volume(1.00,delay=0, channel='music')
-
-    scene terry
     y "Woah.... larry..."
 
     stop music fadeout 2.0
-
     y "I don't know what to do."
 
     play sound voice noloop
