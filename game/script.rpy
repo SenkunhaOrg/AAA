@@ -127,7 +127,7 @@ label start:
     l "Why am I here? Is there peenar to destory?"
 
     scene thevoices
-    v "Yes... look at them... peenar ready to be destroyed..."
+    v "Yes... look at them... peenars ready to be destroyed..."
 
     scene black 
     show larry at center
@@ -140,9 +140,9 @@ label start:
     show larry at move_left_and_zoom
     show terry at move_right_and_zoom with dissolve
     y "Hey Larry, what's going on? Why are you yelling about peenar?"
-    l "Terry! I'm trying to destroy all the peenar! They're everywhere, and I can't let them win!" 
+    l "Terry! I'm trying to destroy all the peenars! They're everywhere, and I can't let them win!" 
     y "I understand that you're upset, but maybe you should take a break and calm down. Yelling won't solve anything."
-    l "I know, but I just can't help it! The peenar are so annoying and I want to get rid of them!"
+    l "I know, but I just can't help it! The peenars are so annoying and I want to get rid of them!"
     y "I get it, but maybe we can find a way to deal with the peenar together. Yelling won't make them go away, but maybe we can come up with a plan to handle them." 
     l "I guess you're right, Terry. Maybe we can work together to find a solution to the peenar problem."
 
@@ -156,18 +156,18 @@ label start:
     l "Maybe you're right..."
 
     scene PEC
-    show terry at center
-    y "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
-    y "THERE IS NO ENOUGH PEENAR! I MUST..."
-    y "COLLECT..."
-    y "ALL... THE..."
+    "PEENAR IS LIFE! PEENAR IS LOVE! PEENAR IS EVERYTHING!"
+    "THERE IS NOT ENOUGH PEENAR! YOU MUST..."
+    "COLLECT..."
+    "ALL... THE..."
 
     $ renpy.music.set_volume(0.00, delay=2, channel='music')
 
+    scene black
     play sound horn noloop
     show larry at move_left_and_zoom
     show terry at move_right_and_zoom
-    l "PEEENAAARRRRRR"
+    l "PEEENAAARRRRRR!!!"
    
     $renpy.music.set_volume(1.00,delay=0, channel='music')
     y "Woah.... larry..."
@@ -177,44 +177,31 @@ label start:
 
     play sound voice noloop
     scene thevoices
-
     v "*Muffled signal*"
     
-    scene terry
+    scene black
+    show terry at center
     y "What was that?"
 
     play music theme fadein 3.0
-
     y "I need to explore."
-
     "Terry explores the area to figure out where that noise came from."
     "When suddenly, he hears a..."
 
-    scene adolf jackson
-    with dissolve
+    scene black with dissolve
+    show adolf jackson at center
     play sound heehee noloop
-
     a "HEEHEE"
 
-    scene terry
+    show adolf jackson at move_right_and_zoom
+    show terry at move_left_and_zoom
     y "OMG! ARE YOU THE INFAMOUS ADOLF JACKSON?!"
-
-    scene adolf jackson
     a "Yes, it is I, Terry there is something I must tell you."
-
-    scene terry
     y "What is it?"
-
-    scene adolf jackson
     a "I know where father larry is hiding..."
     a "If you can find him and catch him, larry will finally be at peace again."
-    
-    scene terry
-    y "But larry said he tried everything and couldn't find him!"
+    y "But Larry tried everything and couldn't find him!"
     y "How do you know where he is?!"
- 
-
-    scene adolf jackson
     a "Doesn't matter, do you accept my offer?"
 
     menu:
@@ -225,80 +212,40 @@ label start:
             jump refuse
 
     label findlarry:
-        scene terry
         y "I will find him...and end his terror once and for all!"
-        
-        scene adolf jackson
         a "Good, now listen intently!"
         a "Father Larry once came to me a long time ago..."
 
-        scene black
-        with dissolve
+        scene black with dissolve
         "About 67 months and 69 days ago..."
         
-        scene father larry
-        with dissolve
-        f "I need your help Adolf..."
+        show father larry with dissolve
+        f "I need your help, Adolf..."
         f "With a serious matter..."
 
-        scene adolf jackson
-        with dissolve
+        show father larry at move_left_and_zoom
+        show adolf jackson at move_right_and_zoom
         play sound heehee noloop
-
         a "Oh my... HEHE... whatever is troubling you?"
-
-        scene father larry
-        with dissolve
         f "It appears my experiments aren't going too well..."
         f "I feared this day would come..."
         f "After all, my son. Larry!-"
-
-        scene adolf jackson
         a "Oh poor little Larry, what a wonderful... child..."
-
-        scene father larry
-        with dissolve
         f "Yes... he is..."
         f "Regardless, I need you to help me."
-
-        scene adolf jackson
-        with dissolve
         a "Of course! What do you need me to do?"
-
-        scene father larry
-        with dissolve
         f "You need to take Larry. Far away."
         f "Far. Far. Away."
-
-        scene adolf jackson
         a "EXCUSE ME?!"
         a "Sorry... I got a bit excited..."
-        a "I will do. What are you going to do?"
-
-        scene father larry
-        with dissolve
+        a "I will. What are you going to do?"
         f "I will tell you this because I trust you, but you mustn't tell a soul!"
-
-        scene adolf jackson
-        with dissolve
         a "Okay, I'm all peenar."
-
-        scene father larry
-        with dissolve
         f "I'm going to take Larry's peenar."
-
-        scene adolf jackson
-        with dissolve
         a "*Gasps like he's found his first kitten.*"
         a "Surely not... don't joke around."
-
-        scene father larry
-        with dissolve
         f "I wish I was."
         f "I'll bring him to you."
-
-        scene adolf jackson
-        with dissolve
         a "*Shocked... but compliant*"
         a "I'll wait here."
 
@@ -306,66 +253,58 @@ label start:
         with dissolve
         "A few moments pass."
 
-        scene larry
+        scene black
+        show larry at center
         with dissolve
         l "*Sleep talking* La la la la la."
+
         play sound snip noloop
         l "*Sleep talking* Pee... nar...."
 
-        scene black
-        with dissolve
-        f "Peenar, acquired."
+        scene black with dissolve
+        f "Peenar acquired."
 
-        scene father larry
-        with dissolve
+        scene black
+        show father larry at move_left_and_zoom
         f "Here he is, sleeping soundly. Now go, please."
 
-        scene larry
+        show larry at center
         with dissolve
         l "*Shmimimimimi*"
 
-        scene adolf jackson
+        show adolf jackson at move_right_and_zoom
         with dissolve
         a "Okay, where will you be?"
-
-        scene father larry
-        with dissolve 
         f "Taiwan."
 
-        scene black
-        with dissolve
+        scene black with dissolve
         "To the present."
 
-        scene adolf jackson
+        scene black with dissolve
+        show adolf jackson at center
         with dissolve
         a "Taiwan."
 
-        scene terry
+        show adolf jackson at move_left_and_zoom
+        show terry at move_right_and_zoom
         y "Oh... LADY BOY!"
         "Terry jumps with joy."
         jump after_menu
         
-
     label refuse:
-        scene terry
         y "No, but I will tell Larry and he can take his revenge"
-
-        scene adolf jackson
-        with dissolve
         a "Fine, but beware..."
         a "Lady boys are surrounding the area..."
-
-        scene terry
         y "Oh... LADY BOY!"
         jump after_menu
 
-
     label after_menu:
-
-    scene adolf jackson
+    scene black
+    show adolf jackson at center
     a "Now I must leave, I can't be seen with young kittens, again."
 
-    scene terry
+    show adolf jackson at move_left_and_zoom
+    show terry at move_right_and_zoom
     y "It has been a pleasure, Adolf Jackson."
 
     scene black
@@ -373,43 +312,27 @@ label start:
     a "HEHEHE.... HEHE..."
     a "hehe..."
 
-    scene larry with dissolve
+    show larry at center
+    with dissolve
     l "*Jorking it crazy style*"
 
-    scene terry
+    show larry at move_right_and_zoom
+    show terry at move_left_and_zoom
     y "LARRY THERE IS SOMETHING I MUST TELL YOU!"
     y "Oh my-! Sorry for interrupting."
-
-    scene larry
     l "It's alright, what is it that you want to tell me?"
-
-    scene terry
     y "I met with Adolf Jackson and he told me where Father Larry is hiding..."
     y "He said he's in...Taiwan..."
-
-    scene larry
     l "WHAT?! I SHOULD HAVE KNOWN!"
-    l "When I was a kid, he used to take me to taiwan with Adolf Jackson...and they would..."
-
-    scene terry
+    l "When I was a kid, he used to take me to taiwan with Adolf Jackson... and they would..."
     y "They would?"
-
-    scene larry
-    l "They had a cult there led by...THE CREATURE."
+    l "They had a cult there led by... THE CREATURE."
     l "They would steal peenars and conduct sick, twisted experiments on them."
-    l "The creature would host parties where the cult members would jork all their peenars together. Father larry took me to one of those parties once and...they all jorked on me..."
-
-    scene terry
-    y "Oh my god, Larry...I'm so sorry."
+    l "THE CREATURE would host parties where the cult members would jork all their peenars together. Father larry took me to one of those parties once and...they all jorked on me..."
+    y "Oh my God, Larry... I'm so sorry."
     y "WE HAVE TO GO TO TAIWAN AND TAKE YOUR REVENGE!"
-
-    scene larry
     l "It would be too dangerous with just the two of us, they're too powerful."
-
-    scene terry
     y "I know the perfect person we can recruit on our journey..."
-
-    scene larry
     l "You don't mean..."
 
     scene james with fade
