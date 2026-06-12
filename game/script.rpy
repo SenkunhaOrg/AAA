@@ -13,8 +13,9 @@ image thevoices = im.Scale("thevoice.png", 1920, 1080)
 # image adolf jackson = im.Scale("adolf jackson.jpg", 1920, 1080)
 # image father larry = im.Scale("father larry.gif", 1920, 1080)
 # image james = im.Scale("james.jpg", 1920, 1080)
-image bg alleyway = im.Scale("bg alleyway.jpg", 1920, 1080)
-image bg room = im.Scale("bg room.jpg", 1920, 1080)
+image alleyway = im.Scale("bg alleyway.jpg", 1920, 1080)
+image bedroom = im.Scale("bg room.jpg", 1920, 1080)
+image taiwan = im.Scale("Taiwan.jpg", 1920, 1080)
 
 
 # Note: We need Background images. Define above with "= im.Scale("imagefile", 1920, 1080)" as shown.
@@ -196,9 +197,9 @@ label start:
     "{i}*Terry explores the area to figure out where that noise came from*{/i}"
     "{i}*When suddenly, he hears a...*{/i}"
 
-    scene black with dissolve
-    scene bg alleyway
+    scene alleyway
     show adolf jackson at center
+    with dissolve
     play sound heehee noloop
     a "HEEHEE"
 
@@ -228,8 +229,9 @@ label start:
 
         scene black with dissolve
         "About 67 months and 69 days ago..."
-        
-        show father larry with dissolve
+
+        scene alleyway with dissolve    
+        show father larry at center
         f "I need your help, Adolf..."
         f "With a serious matter..."
 
@@ -261,19 +263,17 @@ label start:
         with dissolve
         "{i}A few moments pass.{/i}"
 
-        scene black
-        scene bg room
+        scene bedroom
         show larry at center
         with dissolve
         l "{i}*Sleep talking*{/i} La la la la la."
-
-        play sound snip noloop
         l "{i}*Sleep talking*{/i} Pee... nar...."
 
-        scene black
+        play sound snip noloop
+        "{i}Snip...{p}Snip...{p}Snip...{/i}"
         f "Peenar acquired."
 
-        scene black with dissolve
+        scene alleyway with dissolve
         show father larry at move_left_and_zoom
         f "Here he is, sleeping soundly.{w} Now go, please."
 
@@ -289,8 +289,7 @@ label start:
         scene black with dissolve
         "{i}*To the present*{/i}"
 
-        scene black
-        scene bg alleyway
+        scene alleyway
         show adolf jackson at center
         with dissolve
         a "Taiwan."
@@ -309,8 +308,7 @@ label start:
 
     label after_menu:
 
-    scene black
-    scene bg alleyway
+    scene alleyway
     show adolf jackson at center
     a "Now I must leave, I can't be seen with young kittens, again."
 
@@ -320,11 +318,9 @@ label start:
 
     scene black
     play sound heehee noloop
-    a "HEHEHE.... HEHE..."
-    a "hehe..."
-    scene bg room
+    a "HEHEHE....{w} HEHE...{w} hehe..."
 
-
+    scene bedroom
     show larry at center
     with dissolve
     l "{i}*Jorking it crazy style*{/i}"
@@ -348,23 +344,20 @@ label start:
     t "I know the perfect person we can recruit on our journey..."
     l "You don't mean..."
 
-    scene black
-    scene bg room 
+    scene bedroom
     show james with fade
     l "JAMES?!"
     j "Hey, kiddo."
 
-    scene black
-    scene bg room 
     show larry at center
-    l "Where... why... how?"
+    l "Where...{w} why...{w} how?"
     l "I saw your... peenar explode."
 
     show larry at move_left_and_zoom
     show james at move_right_and_zoom
     with dissolve
     j "Yes, it did. Perhance..."
-    j "But, when my kohai called me. I couldn't stay away."
+    j "But, when my kohai called me, I couldn't stay away."
     l "You should be....{w} PEENARLESS!"
 
     show larry angry at move_left_and_zoom
@@ -385,10 +378,10 @@ label start:
     v "Terry loves lady boys."
 
     scene black with dissolve
-    scene bg room 
     "{i}*Fast forwarding 6 hours*{/i}"
     "Yes, Terry spoke about lady boys for 6 hours."
 
+    scene bedroom
     show terry at center with dissolve
     t "And that's how I fell in love with Ching Chong Xiao!"
 
