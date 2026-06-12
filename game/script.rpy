@@ -13,6 +13,9 @@ image thevoices = im.Scale("thevoice.png", 1920, 1080)
 # image adolf jackson = im.Scale("adolf jackson.jpg", 1920, 1080)
 # image father larry = im.Scale("father larry.gif", 1920, 1080)
 # image james = im.Scale("james.jpg", 1920, 1080)
+image bg alleyway = im.Scale("bg alleyway.jpg", 1920, 1080)
+image bg room = im.Scale("bg room.jpg", 1920, 1080)
+
 
 # Note: We need Background images. Define above with "= im.Scale("imagefile", 1920, 1080)" as shown.
 
@@ -194,6 +197,7 @@ label start:
     "{i}*When suddenly, he hears a...*{/i}"
 
     scene black with dissolve
+    scene bg alleyway
     show adolf jackson at center
     play sound heehee noloop
     a "HEEHEE"
@@ -258,6 +262,7 @@ label start:
         "{i}A few moments pass.{/i}"
 
         scene black
+        scene bg room
         show larry at center
         with dissolve
         l "{i}*Sleep talking*{/i} La la la la la."
@@ -285,6 +290,7 @@ label start:
         "{i}*To the present*{/i}"
 
         scene black
+        scene bg alleyway
         show adolf jackson at center
         with dissolve
         a "Taiwan."
@@ -304,6 +310,7 @@ label start:
     label after_menu:
 
     scene black
+    scene bg alleyway
     show adolf jackson at center
     a "Now I must leave, I can't be seen with young kittens, again."
 
@@ -315,6 +322,8 @@ label start:
     play sound heehee noloop
     a "HEHEHE.... HEHE..."
     a "hehe..."
+    scene bg room
+
 
     show larry at center
     with dissolve
@@ -340,11 +349,13 @@ label start:
     l "You don't mean..."
 
     scene black
+    scene bg room 
     show james with fade
     l "JAMES?!"
     j "Hey, kiddo."
 
     scene black
+    scene bg room 
     show larry at center
     l "Where... why... how?"
     l "I saw your... peenar explode."
@@ -374,6 +385,7 @@ label start:
     v "Terry loves lady boys."
 
     scene black with dissolve
+    scene bg room 
     "{i}*Fast forwarding 6 hours*{/i}"
     "Yes, Terry spoke about lady boys for 6 hours."
 
@@ -390,8 +402,7 @@ label start:
     t "This is for your peenar revenge! We have to! It doesn't matter what he will or won't do!"
     l "Yeah... I guess so... Let's go."
 
-    scene bg room
-    show larry
+
 
 
 
